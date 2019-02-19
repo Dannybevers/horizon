@@ -247,6 +247,7 @@
                                 <th>Processes</th>
                                 <th>Jobs</th>
                                 <th>Wait</th>
+                                <th>&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -257,6 +258,7 @@
                                 <td>{{ queue.processes ? queue.processes.toLocaleString() : 0 }}</td>
                                 <td>{{ queue.length ? queue.length.toLocaleString() : 0 }}</td>
                                 <td>{{ humanTime(queue.wait) }}</td>
+                                <td>{{ queue.wait }}</td>
                             </tr>
                         </tbody>
                     </table>
